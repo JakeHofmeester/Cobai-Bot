@@ -1,0 +1,17 @@
+{
+  "name": "cobai_bot",
+  "description": "Main bot for Cobai's Discord Server",
+  "version": "0.0.1",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2",
+    "yaml": "^1.10.0"
+  }
+}
