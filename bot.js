@@ -27,5 +27,13 @@ for (const file of commandFiles) {
   client.commands.set(command.name.toUpperCase(), command);
 }
 
+bot.on("message", function (msg) {
+  // if message begins with "ping"
+  if (msg.content.indexOf("ping") === 0) {
+    // send a message to the channel the ping message was sent in.
+    bot.sendMessage(msg.channel, "pong!");
+  }
+});
+
 // Bot login
 client.login(process.env.BOT_TOKEN);
